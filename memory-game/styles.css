@@ -1,0 +1,169 @@
+ * { /* Simple reset to all */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    background: #ffae00;
+  }
+
+  .title { /* The "h1" */
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    text-shadow: 3px 3px 3px #493200;
+    margin-left: 140px;
+    margin-right: -40px;
+    position: relative;
+  }
+
+  .side_bar{
+    background-image: linear-gradient(to bottom,#644503,#8b5f00);
+    box-shadow: 3px 3px 3px #614200;
+    width: 300px;
+    height: 350px;
+    border: solid;
+    border-color: #493200;
+    border-width: 8px;
+    border-radius: 5px;
+    margin-top: 250px;
+    margin-left: 110px;
+    position: absolute;
+  }
+
+  .font_side_bar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .restart{ /* The button of restart all cards */
+    width: 100px;
+    height: 40px;
+    background-color: #2e2000;
+    border-color: wheat;
+    border-radius: 3px;
+    color: #ffffff;
+    margin-left: 32%;
+    margin-top: 5%;
+  }
+  .restart:hover{
+    border: solid;
+    border-color: #201600;
+    width: 100px;
+    height: 40px;
+    margin-left: 32%;
+    margin-top: 5%;
+  }
+
+  .ranking{ /* The button of the ranking */
+    width: 100px;
+    height: 40px;
+    background-color: #2e2000;
+    border-color: wheat;
+    border-radius: 3px;
+    color: #ffffff;
+    margin-left: 32%;
+    margin-top: 5%;
+  }
+  .ranking:hover{
+    border: solid;
+    border-color: #201600;
+    width: 100px;
+    height: 40px;
+    margin-left: 32%;
+    margin-top: 5%;
+  }
+
+  .rules{ /* The button of rules*/
+    width: 100px;
+    height: 40px;
+    background-color: #2e2000;
+    border-color: wheat;
+    border-radius: 3px;
+    color: #ffffff;
+    margin-left: 32%;
+    margin-top: 5%;
+  }
+  .rules:hover{
+    border: solid;
+    border-color: #201600;
+    width: 100px;
+    height: 40px;
+    margin-left: 32%;
+    margin-top: 5%;
+  }
+
+  .memory-game { /* Box in the cards */
+    width: 640px;
+    height: 540px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+  
+  .memory-card { /* Card body */
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.452);
+    border-radius: 15px;
+  }
+  
+  .memory-card:active { /* Card movement */
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+  
+  .memory-card.flip { /*Rotate card*/
+    transform: rotateY(180deg);
+  }
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 15px;
+    background: #493200;
+    backface-visibility: hidden;
+  }
+  .front-face {
+    transform: rotateY(180deg);
+  }
+
+  .input_name{
+    width: 50%;
+    height: 30px;
+    margin-top: -5px;
+    margin-left: 25%;
+    border-radius: 5px;
+  }
+  ::placeholder{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+  }
+
+  .send_name{
+    width: 60px;
+    height: 20px;
+    margin-left: 39%;
+    margin-top: 6px;
+    background-color: #291d01;
+    border-radius: 7px;
+    color: #ffffff;
+  }
+
+  .man_confused{
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 17.3%;
+  }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <h1 class="title"><p>The <br> Front</p></h1>
+
+  <nav class="side_bar">
+    <button class="rules"><p class="font_side_bar">Rules</p></button>
+    <button class="ranking"><p class="font_side_bar">Ranking</p></button>
+    <button class="restart" onclick="reset()"><p class="font_side_bar">Restart</p></button>
+    <p class="font_side_bar" style="color: aliceblue; text-align: center; margin: 20px;">Choose a name for your score to contend in ranking:</p>
+    <input type="text" class="input_name" name="User" placeholder="Example: John...">
+    <button class="send_name"><p class="font_side_bar">Confirm</p></button>
+  </nav>
+
+    <section class="memory-game">
+        <div class="memory-card" data-framework="php-logo">
+          <img class="front-face" src="img/php-logo.png" alt="Face da Carta">
+          <img class="back-face" src="img/verso-logo.png" alt="Verso da Carta">
+        </div>
+      
+        <div class="memory-card" data-framework="php-logo">
+          <img class="front-face" src="img/php-logo.png" alt="Face da Carta">
+          <img class="back-face" src="img/verso-logo.png" alt="Verso da Carta">
+        </div>
+      
+        <div class="memory-card" data-framework="js-logo">
+          <img class="front-face" src="img/js-logo.png" alt="Face da Carta">
+          <img class="back-face" src="img/verso-logo.png" alt="Verso da Carta">
+        </div>
+      
+        <div class="memory-card" data-framework="js-logo">
+          <img class="front-face" src="img/js-logo.png" alt="Face da Carta">
+          <img class="back-face" src="img/verso-logo.png" alt="Verso da Carta">
+        </div>
+      
+        <div class="memory-card" data-framework="html-logo">
+          <img class="front-face" src="img/html-logo.png" alt="Face da Carta">
+          <img class="back-face" src="img/verso-logo.png" alt="Verso da Carta">
+        </div>
+      
+        <div class="memory-card" data-framework="html-logo">
+          <img class="front-face" src="img/html-logo.png" alt="Face da Carta">
+          <img class="back-face" src="img/verso-logo.png" alt="Verso da Carta">
+        </div>
+      
+        <div class="memory-card" data-framework="css-logo">
+          <img class="front-face" src="img/css-logo.png" alt="Face da Carta">
+          <img class="back-face" src="img/verso-logo.png" alt="Verso da Carta">
+        </div>
+      
+        <div class="memory-card" data-framework="css-logo">
+          <img class="front-face" src="img/css-logo.png" alt="Face da Carta">
+          <img class="back-face" src="img/verso-logo.png" alt="Verso da Carta">
+        </div>
+      
+        <div class="memory-card" data-framework="jQuery-logo">
+          <img class="front-face" src="img/jQuery-logo.png" Face da Carta="Backbone">
+          <img class="back-face" src="img/verso-logo.png" alt="Verso da Carta">
+        </div>
+      
+        <div class="memory-card" data-framework="jQuery-logo">
+          <img class="front-face" src="img/jQuery-logo.png" Face da Carta="Backbone">
+          <img class="back-face" src="img/verso-logo.png" alt="Verso da Carta">
+        </div>
+      
+        <div class="memory-card" data-framework="bootstrap-logo">
+          <img class="front-face" src="img/bootstrap-logo.png" alt="Face da Carta">
+          <img class="back-face" src="img/verso-logo.png" alt="Verso da Carta">
+        </div>
+      
+        <div class="memory-card" data-framework="bootstrap-logo">
+          <img class="front-face" src="img/bootstrap-logo.png" alt="Face da Carta">
+          <img class="back-face" src="img/verso-logo.png" alt="Verso da Carta">
+        </div>
+      </section>
+
+      <img src="./img/boneco-confuso.png" alt="Man confused" class="man_confused" width="200px" height="380px">
+
+      <script src="./scripts.js"></script>
+</body>
+</html>
