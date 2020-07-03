@@ -16,6 +16,7 @@
     <button class="rules"><p class="font_side_bar">Rules</p></button>
     <button class="ranking"><p class="font_side_bar">Ranking</p></button>
     <button class="restart" onclick="reset()"><p class="font_side_bar">Restart</p></button>
+
     <p class="font_side_bar" style="color: aliceblue; text-align: center; margin: 20px;">Choose a name for your score to contend in ranking:</p>
     <input type="text" class="input_name" name="User" placeholder="Example: John...">
     <button class="send_name"><p class="font_side_bar">Confirm</p></button>
@@ -83,8 +84,16 @@
         </div>
       </section>
 
+      <div class="score">
+        <button onclick="start()" class="button1"><p class="font_side_bar">Start timer</p></button>
+       <h2 id="counter" class="timer-score">00:00:00</h2>
+       <p class="font_side_bar" style="font-size: 24px; margin-top: 20px;">Pontuação:</p>
+       <span id="pontuacao" class="timer-score"></span>
+      </div>
+
       <img src="./img/boneco-confuso.png" alt="Man confused" class="man_confused" width="200px" height="380px">
 
+      <script src="./timer.js"></script>
       <script src="./scripts.js"></script>
 </body>
 </html>

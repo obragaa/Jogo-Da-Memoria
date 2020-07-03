@@ -13,16 +13,31 @@ function flipCard() {
   if (!hasFlippedCard) {
     // first click
     hasFlippedCard = true;
-    firstCard = this;
-
-    return;
+    firstCard = this; return;
   }
 
   // second click
   secondCard = this;
 
+  if (pontuacao < 14){
+    pontuar(++pontuacao, ++pontuacao, ++pontuacao)
+  }
+  else if (pontuacao >= 14 && pontuacao < 30){
+    pontuar(++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao)
+  }
+  else{
+    pontuar(++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao, ++pontuacao)
+  }
+
   checkForMatch();
 }
+
+var pontuacao = 0
+function pontuar(pontos){
+  var spanPontuacao = document.getElementById("pontuacao") 
+  spanPontuacao.innerHTML = pontos
+}
+pontuar(pontuacao)
 
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
@@ -59,5 +74,19 @@ function resetBoard() {
     card.style.order = randomPos;
   });
 })();
+
+function reset(){
+
+  
+  clearInterval(cron);
+  hh = 0;
+  mm = 0;
+  ss = 0;
+
+  document.getElementById('counter').innerText = '00:00:00';
+
+  pontuacao = 0
+  pontuar(pontuacao)
+}
 
 cards.forEach(card => card.addEventListener('click', flipCard));

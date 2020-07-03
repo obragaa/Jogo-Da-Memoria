@@ -123,6 +123,7 @@
   
   .memory-card.flip { /*Rotate card*/
     transform: rotateY(180deg);
+    
   }
   
   .front-face,
@@ -167,3 +168,45 @@
     margin-left: 85%;
     margin-top: 17.3%;
   }
+
+  .button1 {
+    position: static;
+    width: 100px;
+    height: 40px;
+    background-color: #ffe62a80;
+    border-color: rgb(214, 193, 155);
+    border-radius: 15px;
+    color: #000000;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .button1:hover {
+    background-color: #da0000;
+    border-radius: 15px;
+  }
+  .button1:active {
+    background-color: #201600;
+  }
+
+ .timer-score {
+   position: static;
+   font-family: 'Courier New', Courier, monospace;
+   margin-top: 5px;
+   font-size: 25px;
+   font-weight: bolder;
+ }
+
+ .score {
+   position: absolute;
+   box-sizing: border-box;
+   background-color: #FFF;
+   box-shadow: 0 0 5px #FFF;
+   text-align: center;
+   margin-left: 86.333%;
+   margin-top: 10px;
+   width: 177px;
+   height: 225px;
+   border-radius: 6px;
+ }
